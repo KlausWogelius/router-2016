@@ -1,0 +1,171 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[danish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{caption} %kontroller "caption" bedre
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{nameref} %referer til titler
+\usepackage{geometry}
+\usepackage{arrayjob} %lav arrays af variabler
+\usepackage{placeins} %hold floats indenfor barrierer
+\usepackage{eurosym} %skriv et EURO-tegn
+\usepackage{multirow} %definer multi-rækker/ -søjler i tabeller
+\usepackage{paralist} %Udvidede liste-funktioner
+\usepackage{import} %erstatter \include{} og \input{}
+\usepackage{xcolor} % sæt farver på tekst
+\usepackage{lipsum} %autogenerer tekst til testbrug
+
+\begin{document}
+%titelhoved
+\begin{flushright}
+\includegraphics[width=0.15\textwidth]{./telelogo}~\\[1cm] %("~" får "\\" til at virke)
+\end{flushright}
+\begin{center}
+\textsc{\LARGE Tele Greenland A/S}\\[1cm]
+\textsc{\huge Udvidelse af backbone routernettets transmissionskapacitet} \\ [1cm]
+\textsc{\Large Projektbeskrivelse}\\[0.5cm]
+{\large \today} %dato
+\end{center}
+
+\tableofcontents
+
+\section{Baggrund}
+I henhold til 10 års trafikprognosen for 2011-2020 vil kapaciteten på nordradiokæden være opbrugt lige nord for NUK i sommeren 2016. Derfor er Tele i færd med at projektere anlæggelsen af et søkabel på strækket NUK-MAN-SIS-AAS og en 10Gbps radiokæde på strækket AAS-QAS-ILU.
+\par
+Den kraftige stigning i trafikforbruget er næsten udelukkende en stigning i brug af Internettet. Traditionelle tjenester som fastnet telefoni, GSM og DVBT er ikke stigende.
+\par
+{\em Søkabel- og 10Gbps radiokæde- projektets formål er derfor primært at understøtte en udvidelse af TELE Greenlands backbone-routernet's kapacitet.}
+\section{Formålsbeskrivelse}
+Tele Greenlands \textbf{backbone routernet} mellem NUK og UUM skal redesignes for at gøre brug af den forøgede kapacitet og redundans, som  søkabelprojektet muliggør. Projektet skal sikre et fremtidigt backbone routernet der kan levere de IP-baserede tjenester til kunden. 
+\par
+Projektets primære formål er derfor at planlægge gennemførelsen af en opgradering af routernetværket på strækningen NUK – UUM sommeren 2016, således at kapaciteten på søkablet NUK-MAN-SIS-AAS og 10Gbps radiokæden AAS-AKU-IKA-QAS-ILU kan udnyttes så snart det er etableret.
+\par
+Projektets sekundære formål er at undersøge om der er relevante projektaktiviteter der skal iværksættes i 2016 i forbindelse med den planlagte udbygning af nordkæden fra UUM – UPV.
+\par
+Projektet skal inddrage et helhedsorienteret syn på kapacitetsopgraderingen. Lederne på relaterede projekter\footnote{andre projekter, som skal udføres i forbindelse med den ændrede trafikstruktur som søkabel-projektet bevirker.} skal indlede et samarbejde med henblik på koordination med det formål at minimere de samlede omkostninger samt kundeafbrydelser under anlægsfasen.
+\section{Afgrænsning af projektet}
+Følgende opgaver hører ikke under nærværende projekt:
+\begin{itemize}
+\item DVBT-nettet skal redesignes, herunder flyttes fra Ericsson radiokæden til routernettet.
+\item E1-forbindelserne skal redesignes.
+\end{itemize}
+\section{Projektorganisation}
+\begin{description}
+\item[Rekvirent:] JFS
+\item[Styregruppe:] JFS, KHZ, SHA.	
+\item[Projektleder:] KW
+\end{description}
+\section{Projektdeltagere}
+Dannes af projektleder i samarbejde med styregruppen.
+\section{Ressourcepersoner}
+\begin{description}
+\item[JFS]
+Modtager under afleveringsforretningen af dette skrivebordsprojekt og det efterfølgende anlægsprojekt.
+\par
+Efterfølgende driftsansvarlig for backbone routernettet.
+\par
+Inddrages i alle forhold omkring design, kapacitet, kvalitet funktionalitet og uddannelse.
+\par
+Inddrages desuden i specifikation af de krav, der stilles fra routernettet til transportnettet\footnote{Med "transportnettet" menes det underliggende transmissionsnetværk - såsom kabler og radiokæder - som skaber forbindelserne mellem routernettets enheder.}.
+\item[SHA]
+Projektleder for søkablet NUK-MAN-SIS-AAS og leder af anlægsafdelingen.
+\par
+Inddrages i praktiske spørgsmål, der er til søkablet NUK-MAN-SIS-AAS.
+\item[BSJ]
+Projektleder for 10Gbps radiokæden AAS-AKU-IKA-QAS-ILU.
+\par
+Har udarbejdet forundersøgelse UUM–UPV og har mange års erfaring med anlæg af radiokæder.
+\par
+Inddrages i praktiske spørgsmål, der er til 10Gbps radiokæden AAS-AKU-IKA-QAS-ILU og til den kommende radiokæde UUM.UPV.
+\item[KBA]
+Har deltaget i design, installation og idriftsættelse af det nuværende backbone router netværk mellem Nuuk og Uummannaq.
+\par
+Inddrages i praktiske spørgsmål, der er til det nuværende backbone router netværk.
+\item[KHZ]
+Teknisk driftschef. Overordnet driftsansvarlig for transmissionsnettet og Teles tjenester.
+\par
+Indrages i praktiske spørgsmål omkring anlæg, drift og vedligehold.
+\end{description}
+\section{Leverancer}
+Nærværende projekt omfatter en skrivebordundersøgelse der munder ud i:
+\begin{itemize}
+\item Design af routernet tilpasset brug at søkablet NUK-MAN-SIS-AAS og 10Gbps radiokæden AAS-AKU-IKA-QAS-ILU.
+\item Projektplan for fysisk etablering og idriftsættelse af backbone routernettet, incl.
+\begin{inparaenum}[(a)]
+\item tidsplan,
+\item budget, 
+\item interessentanalyse og
+\item risikoanalyse.
+\end{inparaenum}
+\end{itemize}.
+\par
+I det efterfølgende anlægsprojekt gennemføres en fysisk etablering af det redesignede backbone routernet
+\section{Rekvirentens krav}
+ Rekvirenten sørger for gennemførsel af styregruppemøde 1 gang hver 14 dag.
+\subsection{Resultatmål}
+\begin{enumerate}
+\item Projektet gennemføres i henhold til forudsætninger i 10 års trafikprognose 2011 – 2020
+\item Minimums kapacitet for ny anlæg er:
+\begin{itemize}
+\item 10 Gbps mellem NUK og AAS
+\item 8 Gbps mellem AAS og ILU
+\item 800 Mbps mellem ILU og UPV
+\end{itemize}
+\item Backbone routernettet skal tilsluttes transportnettet med optisk interface.
+\item Alle komponenter i nettet pånær "CE-enheden"
+\footnote{
+"CE-enheden" kan være en router, en switch eller en anden type access point, der vender ud mod enten
+\begin{itemize}
+\item en kunde, eller
+\item en tjeneste på et højere lag (som f.eks. DVBT)
+\end{itemize}
+}
+er redundante
+\footnote{
+under design af routernettet tages kun højde for {\em single} failures i {\em routernettets} komponenter. Der skal dog i samarbejde med søkabel- og radiokædeprojektet planlægges en fremføring af forbindelserne mellem komponenter i routernettet, således at redundans også eksisterer ved single failures i transportnettets komponenter.
+}
+.
+\begin{enumerate}
+\item Backbone routernettet skal passe til transportnettet.
+\item Fysisk placering af komponenterne i backbone routernetværket skal specificeres.
+\end{enumerate}
+\item Der ønskes undersøgt 3 scenarier for backbone routernetværket:
+\begin{enumerate}
+\item Et minimums scenarie med lavest muligt anlægsomkostninger.
+\item Et scenarie hvor flest mulige bygder og byer tilsluttes det nye backbone routernet.
+\item Et mellemscenarie der samlet set giver de lavest TCO for det nye backbone routernet og det allerede anlagte routernet.
+\end{enumerate}
+\item For alle 3 scenarier udarbejdes en TCO beregning over 10 år vha. TELEs standrad TCO regneark.
+\item De 3 scenarier præsenteres for styregruppen som en skriftlig mellemrapport.
+\item Styregruppen beslutter hvilket scenarie projektet arbejder videre med.
+\end{enumerate}
+\subsection{Effektmål}
+\begin{description}
+\item [I nærværende projekt ]klarlægges forudsætningerne for at anlægge det teknisk og økonomiske mest forsvarlige koncept til transport af IP tjenesterne.
+\item [I efterfølgende anlægsprojekt] sikres at Tele fremadrettet kan levere Internet i takt med kundernes stigende efterspørgsel.
+\end{description}
+\section{Eventuel konsekvens ved manglende gennemførelse}
+Det vil ikke være muligt at opgradere kapaciteten på backbone netværket i 2016, hvorfor alle IP baserede tjenester vil opleve nedsat kapacitet.
+\section{Tidsramme}
+\begin{itemize}
+\item Nærværende projekt gennemføres september-november 2015.
+\begin{enumerate}
+\item Projektstart 1. september 2015
+\item Delrapport afleveres til styregruppe 15. oktober 2015
+\item Endelig rapport afleveres senest 1. december 2015
+\item I forbindelse med det indledende 2016 projektbudget arbejde, udarbejdes et foreløbige budgetinput for det efterfølgende anlægsprojekt senest 15. oktober 2015.
+\end{enumerate}
+\item Det efterfølgende anlægsprojekt gennemføres i perioden januar-november 2016.
+\end{itemize}
+\section{budget}
+
+%\bibliographystyle{plain}
+%\bibliography{./forms/forms}
+
+
+%\chapter{Last note}
+
+\end{document}
